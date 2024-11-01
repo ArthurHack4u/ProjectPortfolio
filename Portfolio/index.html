@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>¡Feliz Cumpleaños!</title>
     <style>
         body, html {
@@ -57,16 +57,18 @@
         .message {
             text-align: justify;
             background: #fff;
-            padding: 40px;
+            padding: 20px;
             border-radius: 10px;
             box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
             animation: fadeIn 2s ease-out;
             z-index: 10;
-            margin: 450px;
+            max-width: 90%;
+            width: 600px;
+            margin: 20px;
         }
 
         h1 {
-            font-size: 3em;
+            font-size: 2em;
             color: #8e24aa;
             margin: 0;
             text-align: center;
@@ -74,7 +76,7 @@
         }
 
         p {
-            font-size: 1.2em;
+            font-size: 1em;
             color: #555;
             margin-top: 20px;
             line-height: 1.5;
@@ -83,10 +85,9 @@
 
         .button {
             margin-top: 20px;
-            margin-left: 255px;
             display: inline-block;
             padding: 10px 20px;
-            font-size: 1.2em;
+            font-size: 1em;
             color: #fff;
             background: #f06292;
             border: none;
@@ -108,8 +109,8 @@
         .heart {
             position: absolute;
             display: none;
-            width: 500px;
-            height: 450px;
+            width: 300px;
+            height: 300px;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
@@ -121,14 +122,14 @@
             content: "";
             position: absolute;
             top: 0;
-            width: 260px;
-            height: 400px;
+            width: 150px;
+            height: 250px;
             border-radius: 200px 200px 0 0;
             background: #e91e63;
         }
 
         .heart::before {
-            left: 250px;
+            left: 150px;
             transform: rotate(-45deg);
             transform-origin: 0 100%;
         }
@@ -155,8 +156,8 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%) scale(0);
-            width: 360px;
-            height: 360px;
+            width: 200px;
+            height: 200px;
             border-radius: 50%;
             overflow: hidden;
             z-index: 6;
@@ -184,10 +185,10 @@
 
         .love-message {
             position: absolute;
-            bottom: 50px;
+            bottom: 30px;
             left: 50%;
             transform: translateX(-50%);
-            font-size: 50px;
+            font-size: 1.5em;
             font-weight: bold;
             color: #e91e63;
             text-align: center;
@@ -213,7 +214,7 @@
 
         .hearts {
             position: fixed;
-            font-size: 1.5em;
+            font-size: 1em;
             color: #ff4081;
             z-index: 1;
             animation: riseUp 4s linear;
