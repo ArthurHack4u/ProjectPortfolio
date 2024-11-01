@@ -1,0 +1,223 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    padding: 20px 0;
+    color: #fff;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #f39c12;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.contact-btn {
+    background-color: #f39c12;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: auto;
+    background-color: #f4f4f4;
+}
+
+.intro {
+    max-width: 500px;
+}
+
+.intro h1 {
+    font-size: 2.5em;
+    line-height: 1.2;
+    margin: 10px 0;
+}
+
+.intro h2 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.highlight {
+    color: #f39c12;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.btn {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    margin-right: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.btn-secondary {
+    background-color: #f39c12;
+    color: #fff;
+}
+
+.profile-pic {
+    flex-shrink: 0;
+}
+
+.profile-pic img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.about {
+    background-color: #111;
+    color: #fff;
+    padding: 50px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.about-pic img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 5px solid #f39c12;
+    box-shadow: 0 0 15px rgba(243, 156, 18, 0.5);
+}
+
+.about-text {
+    max-width: 500px;
+}
+
+.about-text h2, .about-text h3 {
+    margin-bottom: 10px;
+}
+
+.about-text p {
+    margin: 20px 0;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+/* Media Queries para Responsividad */
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .navbar ul {
+        gap: 15px;
+    }
+    
+    .hero, .about {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .intro h1 {
+        font-size: 2em;
+    }
+
+    .profile-pic img, .about-pic img {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .btn, .btn-secondary {
+        padding: 8px 15px;
+    }
+}
+
+/* Móvil */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px 0;
+    }
+    
+    .navbar ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .contact-btn {
+        margin-top: 10px;
+    }
+
+    .hero, .about {
+        padding: 20px;
+    }
+
+    .intro h1 {
+        font-size: 1.8em;
+    }
+
+    .intro p, .about-text p {
+        font-size: 0.9em;
+        line-height: 1.4;
+    }
+
+    .profile-pic img, .about-pic img {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .btn, .btn-secondary {
+        padding: 8px 15px;
+        margin-right: 5px;
+        width: 100%;
+        text-align: center;
+    }
+
+    footer p {
+        font-size: 0.8em;
+    }
+}
