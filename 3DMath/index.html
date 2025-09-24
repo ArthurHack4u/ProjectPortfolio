@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>3DMath</title>
-    <link rel="stylesheet" href="assets/style.css">
+    <title>Calculadora de Costos de Impresión 3D</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -12,35 +12,50 @@
         <section class="panel-entradas">
             <h1>Parámetros del Cálculo</h1>
 
+            <h2>Datos de la Pieza</h2>
+            <div class="grupo-input">
+                <label for="gramosPieza">Material usado en la pieza (gramos)</label>
+                <input type="number" id="gramosPieza" placeholder="ej. 85">
+            </div>
+            <div class="grupo-input">
+                <label for="tiempoImpresion">Tiempo de impresión (horas)</label>
+                <input type="number" id="tiempoImpresion" placeholder="ej. 6">
+            </div>
+            <div class="grupo-input">
+                <label for="horasTrabajoActivo">Horas de Trabajo Activo (preparación, post-proceso)</label>
+                <input type="number" id="horasTrabajoActivo" placeholder="ej. 0.5">
+            </div>
+
+            <h2>Costos y Tarifas</h2>
             <div class="grupo-input">
                 <label for="costoRollo">Precio del rollo de filamento ($)</label>
-                <input type="number" id="costoRollo" placeholder="ej. 500">
+                <input type="number" id="costoRollo" placeholder="ej. 300">
             </div>
             <div class="grupo-input">
                 <label for="pesoRollo">Peso del rollo (gramos)</label>
                 <input type="number" id="pesoRollo" value="1000">
             </div>
             <div class="grupo-input">
-                <label for="gramosPieza">Material usado en la pieza (gramos)</label>
-                <input type="number" id="gramosPieza" placeholder="ej. 30">
+                <label for="costoKwh">Costo de tu tarifa eléctrica ($ por kWh)</label>
+                <input type="number" id="costoKwh" step="0.001" value="3.777">
             </div>
-            <hr>
             <div class="grupo-input">
-                <label for="tiempoImpresion">Tiempo de impresión (horas)</label>
-                <input type="number" id="tiempoImpresion" placeholder="ej. 5">
+                <label for="tarifaTrabajo">Tu Tarifa por Hora de Trabajo Activo ($)</label>
+                <input type="number" id="tarifaTrabajo" placeholder="ej. 150">
             </div>
+            <div class="grupo-input">
+                <label for="costoAmortizacion">Costo de Amortización por Hora ($)</label>
+                <input type="number" id="costoAmortizacion" placeholder="ej. 8">
+            </div>
+             <div class="grupo-input">
+                <label for="cargoFijo">Cargo Fijo por Impresión ($)</label>
+                <input type="number" id="cargoFijo" placeholder="ej. 30">
+            </div>
+            
+            <h2>Márgenes de Negocio</h2>
             <div class="grupo-input">
                 <label for="consumoImpresora">Consumo de la impresora (Watts)</label>
-                <input type="number" id="consumoImpresora" value="95">
-            </div>
-            <div class="grupo-input">
-                <label for="costoKwh">Costo de tu tarifa eléctrica ($ por kWh)</label>
-                <input type="number" id="costoKwh" step="0.001" value="0.955">
-            </div>
-            <hr>
-            <div class="grupo-input">
-                <label for="manoDeObra">Porcentaje de Mano de Obra (%)</label>
-                <input type="number" id="manoDeObra" value="30">
+                <input type="number" id="consumoImpresora" value="100">
             </div>
             <div class="grupo-input">
                 <label for="tasaFallo">Porcentaje de Tasa de Fallo (%)</label>
@@ -62,6 +77,6 @@
         </section>
     </main>
 
-    <script src="/assets/script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
