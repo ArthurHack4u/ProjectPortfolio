@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3DMath</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="calculadora-container">
+        <section class="panel-entradas">
+            <h1>Parámetros del Cálculo</h1>
+
+            <div class="grupo-input">
+                <label for="costoRollo">Precio del rollo de filamento ($)</label>
+                <input type="number" id="costoRollo" placeholder="ej. 500">
+            </div>
+            <div class="grupo-input">
+                <label for="pesoRollo">Peso del rollo (gramos)</label>
+                <input type="number" id="pesoRollo" value="1000">
+            </div>
+            <div class="grupo-input">
+                <label for="gramosPieza">Material usado en la pieza (gramos)</label>
+                <input type="number" id="gramosPieza" placeholder="ej. 30">
+            </div>
+            <hr>
+            <div class="grupo-input">
+                <label for="tiempoImpresion">Tiempo de impresión (horas)</label>
+                <input type="number" id="tiempoImpresion" placeholder="ej. 5">
+            </div>
+            <div class="grupo-input">
+                <label for="consumoImpresora">Consumo de la impresora (Watts)</label>
+                <input type="number" id="consumoImpresora" value="95">
+            </div>
+            <div class="grupo-input">
+                <label for="costoKwh">Costo de tu tarifa eléctrica ($ por kWh)</label>
+                <input type="number" id="costoKwh" step="0.001" value="0.955">
+            </div>
+            <hr>
+            <div class="grupo-input">
+                <label for="manoDeObra">Porcentaje de Mano de Obra (%)</label>
+                <input type="number" id="manoDeObra" value="30">
+            </div>
+            <div class="grupo-input">
+                <label for="tasaFallo">Porcentaje de Tasa de Fallo (%)</label>
+                <input type="number" id="tasaFallo" value="10">
+            </div>
+            <div class="grupo-input">
+                <label for="ganancia">Porcentaje de Ganancia Deseada (%)</label>
+                <input type="number" id="ganancia" value="50">
+            </div>
+
+            <button id="calcularBtn">Calcular Precio</button>
+        </section>
+
+        <section class="panel-resultados">
+            <h1>Resultado del Costo</h1>
+            <div id="resumen">
+                <p>Por favor, llena los datos y presiona "Calcular".</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
