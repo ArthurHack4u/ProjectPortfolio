@@ -1,11 +1,92 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Feisbuk</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">feisbuk</a>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link active">Inicio</a>
+                <a href="perfil-ana.html" class="nav-link">Perfil</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container page-content">
+        <aside class="sidebar-left">
+            <h3>Navegación</h3>
+            <a href="perfil-arthur.html" class="profile-link">
+                <img src="assets/batman.jpg" alt="Avatar de Arthur Wayne" class="avatar-small">
+                <span>Arthur Wayne</span>
+            </a>
+            <a href="#" class="sidebar-link">Amigos</a>
+            <a href="#" class="sidebar-link">Grupos</a>
+            <a href="#" class="sidebar-link">Eventos</a>
+        </aside>
+
+        <section class="feed">
+            <div class="card create-post">
+                <div class="create-post-header">
+                    <img src="assets/batman.jpg" alt="Tu Avatar" class="avatar">
+                    <input id="post-input" type="text" placeholder="¿Qué estás pensando, Arthur?">
+                </div>
+                <button class="btn-primary">Publicar</button>
+            </div>
+
+            <article class="card post">
+                <header class="post-header">
+                    <a href="perfil-ale.html">
+                        <img src="assets/ale.jpg" alt="Avatar de Alessandra" class="avatar">
+                    </a>
+                    <div>
+                        <a href="perfil-beto.html" class="post-author">Alessandra Gonzalez</a>
+                        <span class="post-accion">actualizó su foto de perfil</span>
+                        <span class="post-time">hace 15 minutos</span>
+                    </div>
+                </header>
+                <p class="post-content">Mi gato, es un gato feroz!!</p>
+                <img src="assets/gatos-naranjas.jpg" alt="Playa" class="post-image">
+                <footer class="post-footer">
+                    <button class="action-btn"><i class="fas fa-thumbs-up"></i> Like</button>
+                    <button class="action-btn"><i class="fas fa-comment"></i> Comment</button>
+                    <button class="action-btn"><i class="fas fa-share"></i> Share</button>
+                </footer>
+            </article>
+
+            <article class="card post">
+                <header class="post-header">
+                    <a href="perfil-carla.html">
+                         <img src="assets/arturo.jpg" alt="Avatar de Arturo" class="avatar">
+                    </a>
+                    <div>
+                         <a href="perfil-carla.html" class="post-author">Arturo Moran</a>
+                        <span class="post-time">hace 1 hora</span>
+                    </div>
+                </header>
+                <p class="post-content">Me aceptaron en el hackaton, ¡no puedo esperar para empezar!</p>
+                <div>
+                    <span class="post-hashtags">#DesarrolloWeb </span>
+                </div><footer class="post-footer">
+                    <button class="action-btn"><i class="fas fa-thumbs-up"></i> Me gusta</button>
+                    <button class="action-btn"><i class="fas fa-comment"></i> Comentar</button>
+                    <button class="action-btn"><i class="fas fa-share"></i> Compartir</button>
+                </footer>
+            </article>
+        </section>
+
+        <aside class="sidebar-right">
+            <div class="card">
+                <h3>Sugerencias</h3>
+                <p>Personas que quizás conozcas.</p>
+            </div>
+        </aside>
+
+    </main>
+
 </body>
 </html>

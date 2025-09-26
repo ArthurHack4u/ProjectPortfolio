@@ -1,0 +1,300 @@
+/* --- Variables y Estilos Base (Mobile-First) --- */
+:root {
+    --primary-color: #1877f2;
+    --secondary-color: #42b72a;
+    --background-color: #f0f2f5;
+    --card-background: #ffffff;
+    --text-color: #050505;
+    --text-secondary-color: #65676b;
+    --border-color: #dddfe2;
+    --font-family: Arial, sans-serif;
+}
+
+body {
+    font-family: var(--font-family);
+    margin: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.container {
+    padding: 0 1rem; /* Espaciado lateral en móviles */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* --- Barra de Navegación --- */
+.navbar {
+    background-color: var(--card-background);
+    padding: 0.5rem 0;
+    border-bottom: 1px solid var(--border-color);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.nav-link {
+    color: var(--text-secondary-color);
+    font-weight: bold;
+    padding: 0.5rem;
+}
+.nav-link.active {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+}
+
+/* --- Estructura de la Página --- */
+.page-content {
+    padding-top: 1rem;
+}
+.sidebar-left, .sidebar-right {
+    display: none; /* Ocultar sidebars en móvil */
+}
+
+/* --- Tarjetas (Posts, etc.) --- */
+.card {
+    background-color: var(--card-background);
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* --- Feed y Publicaciones --- */
+.feed-title {
+    font-size: 1.2rem;
+    color: var(--text-secondary-color);
+    margin-bottom: 1rem;
+}
+.post-header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.post-author {
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+.post-accion {
+    font-size: 0.8rem;
+    color: var(--text-secondary-color);
+    display: contents;
+    margin-top: 2px;
+}
+
+.post-time {
+    font-size: 0.8rem;
+    color: var(--text-secondary-color);
+    display: block;
+}
+
+
+.post-content {
+    margin: 1rem 0;
+}
+
+.post-image {
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 0.5rem;
+}
+
+#post-input {
+    flex: 1;
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    outline: none;
+    margin-left: 0.5rem;
+}
+.post-footer {
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid var(--border-color);
+    padding-top: 0.5rem;
+    margin-top: 1rem;
+}
+
+.action-btn {
+    background: none;
+    border: none;
+    color: var(--text-secondary-color);
+    font-weight: bold;
+    cursor: pointer;
+    padding: 0.5rem;
+    flex: 1;
+    border-radius: 4px;
+}
+.action-btn:hover {
+    background-color: #f2f2f2;
+}
+.action-btn i {
+    margin-right: 0.5rem;
+}
+
+
+/* --- Perfil de Usuario --- */
+.profile-header {
+    background-color: var(--card-background);
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+.profile-cover img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.profile-info {
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transform: translateY(-50px);
+}
+.profile-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 4px solid var(--card-background);
+    object-fit: cover;
+}
+.profile-details h1 {
+    margin: 0.5rem 0 0.2rem;
+    font-size: 1.8rem;
+}
+.profile-bio {
+    color: var(--text-secondary-color);
+    margin-top: 0;
+}
+.profile-actions {
+    margin-top: 1rem;
+}
+.profile-stats {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+    border-top: 1px solid var(--border-color);
+    margin-top: -30px; /* Ajuste para subir las estadísticas */
+}
+.profile-stats div {
+    text-align: center;
+    color: var(--text-secondary-color);
+}
+.profile-stats strong {
+    color: var(--text-color);
+    display: block;
+}
+
+/* --- Botones --- */
+.btn-primary, .btn-secondary {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 0 0.2rem;
+}
+.btn-primary {
+    background-color: var(--primary-color);
+    color: white;
+    margin-top: 1rem;
+}
+.btn-secondary {
+    background-color: #e4e6eb;
+    color: var(--text-color);
+}
+
+
+/* --- MEDIA QUERY PARA ESCRITORIO --- */
+@media (min-width: 768px) {
+    .container {
+        padding: 0 2rem; /* Mayor espaciado en pantallas grandes */
+    }
+    
+    .page-content {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr; /* Tres columnas */
+        gap: 1.5rem;
+    }
+    
+    .sidebar-left, .sidebar-right {
+        display: block; /* Mostrar sidebars en escritorio */
+    }
+
+    .sidebar-left .profile-link, .sidebar-link {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.5rem;
+        border-radius: 6px;
+        font-weight: 500;
+        color: var(--text-color);
+    }
+    .sidebar-left a:hover {
+        background-color: #e4e6eb;
+    }
+
+    .avatar-small {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+    }
+    
+    .profile-cover img {
+        height: 300px; /* Portada más grande */
+    }
+    .profile-info {
+        flex-direction: row;
+        text-align: left;
+        transform: translateY(-75px);
+    }
+    .profile-avatar {
+        width: 150px;
+        height: 150px;
+    }
+    .profile-details {
+        flex-grow: 1;
+        margin-left: 1rem;
+    }
+    .profile-actions {
+        margin-top: 0;
+    }
+    .profile-stats {
+        justify-content: flex-start;
+        gap: 2rem;
+        padding-left: calc(150px + 3rem); /* Alinear con el nombre */
+        margin-top: -50px;
+    }
+}
