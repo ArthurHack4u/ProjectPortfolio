@@ -19,7 +19,7 @@ El objetivo del proyecto es recrear la experiencia de una red social tipo foro/c
 
 ## 🖼️ Vista previa
 
-> *(Aquí puedes poner capturas de pantalla del proyecto o un gif con el demo)*
+![alt text](assets/image.png)
 
 ---
 
@@ -27,17 +27,29 @@ El objetivo del proyecto es recrear la experiencia de una red social tipo foro/c
 
 KORTEX/
 │── index.html # Página principal (feed)
+
 │── perfil1.html # Perfil principal
+
 │── perfilArturo.html # Perfil 1
+
 │── perfilAlessandra.html Perfil 2
+
 │── perfilKerin.html Perfil 3
+
 │── css/
+
 │ └── style.css # Estilos principales
+
 │── assets/
+
 │ ├── kortex.png # Logo
+
 │ ├── batman.jpg # Avatares de prueba
+
 │ ├── gatos-naranjas.jpg # Posts de prueba
+
 │ └── ... # Imágenes adicionales
+
 ---
 
 ## 🚀 Instalación y Uso
