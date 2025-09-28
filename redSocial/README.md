@@ -63,6 +63,6 @@ Móvil (< 768px) → Solo se muestra el feed, con navegación simplificada.
  Mejorar responsividad
 
 ## 👨‍💻 Autor
-Proyecto creado por Arturo Morán como práctica de diseño web y desarrollo frontend.
+Proyecto creado por Arturo Moran como práctica de diseño web y desarrollo frontend.
 
 Si quieres colaborar, ¡eres bienvenido! 🙌
