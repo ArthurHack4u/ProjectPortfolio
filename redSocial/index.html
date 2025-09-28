@@ -5,96 +5,98 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kortex</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <nav class="navbar">
-        <div class="container">
-            <a href="index.html" class="logo">Kortex</a>
-            <div class="nav-links">
-                <a href="index.html" class="nav-link active">Inicio</a>
+    <header class="top-navbar">
+        <div class="container navbar-content">
+            <a href="index.html">
+                <img src="assets/kortex.png" alt="logo kortex" class="logo">
+            </a>
+            <div class="search-bar">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Buscar en Kortex">
+            </div>
+            <div class="nav-actions">
+                <button class="btn-create"><i class="fas fa-plus"></i> Crear</button>
+                <a href="#"><i class="fas fa-bell nav-icon"></i></a>
+                <a href="perfil1.html">
+                    <img src="assets/batman.jpg" alt="Tu Avatar" class="avatar-small">
+                </a>
             </div>
         </div>
-    </nav>
+    </header>
 
     <main class="container page-content">
         <aside class="sidebar-left">
-            <h3>Navegación</h3>
-            <a href="perfil-arthur.html" class="profile-link">
-                <img src="assets/batman.jpg" alt="Avatar de Arthur Wayne" class="avatar-small">
-                <span>Arthur Wayne</span>
-            </a>
-            <a href="#" class="sidebar-link">Amigos</a>
-            <a href="#" class="sidebar-link">Grupos</a>
-            <a href="#" class="sidebar-link">Eventos</a>
+            <nav class="sidebar-nav">
+                <div class="nav-group">
+                    <h3 class="nav-group-title">NAVEGACIÓN</h3>
+                    <a href="#" class="nav-item active"><i class="fas fa-home"></i><span>Inicio</span></a>
+                    <a href="#" class="nav-item"><i class="fas fa-compass"></i><span>Explorar</span></a>
+                </div>
+                <div class="nav-group">
+                    <h3 class="nav-group-title">COMUNIDADES</h3>
+                    <a href="#" class="nav-item"><i class="fas fa-hashtag"></i><span>F1</span></a>
+                    <a href="#" class="nav-item"><i class="fas fa-hashtag"></i><span>AssetoCorsa</span></a>
+                    <a href="#" class="nav-item"><i class="fas fa-hashtag"></i><span>GatosNaranjas</span></a>
+                    <a href="#" class="nav-item"><i class="fas fa-hashtag"></i><span>CodingLife</span></a>
+                </div>
+                <div class="nav-group">
+                    <h3 class="nav-group-title">TUS HILOS</h3>
+                    <a href="#" class="nav-item"><i class="fas fa-feather-alt"></i><span>Bugs & Features</span></a>
+                    <a href="#" class="nav-item"><i class="fas fa-rocket"></i><span>Desarrollo</span></a>
+                </div>
+            </nav>
         </aside>
 
         <section class="feed">
             <div class="card create-post">
-                <div class="create-post-header">
-                    <img src="assets/batman.jpg" alt="Tu Avatar" class="avatar">
-                    <input id="post-input" type="text" placeholder="¿Qué estás pensando, Arthur?">
+                <img src="assets/batman.jpg" alt="Tu Avatar" class="avatar">
+                <input id="post-input" type="text" placeholder="¿Que estás pensando, Arthur?">
+                <div class="create-post-actions">
+                    <button><i class="fas fa-comment"></i></button>
+                    <button><i class="fas fa-image"></i></button>
                 </div>
-                <button class="btn-primary">Publicar</button>
             </div>
 
             <article class="card post">
                 <header class="post-header">
-                    <a href="perfil-ale.html">
-                        <img src="assets/ale.jpg" alt="Avatar de Alessandra" class="avatar">
-                    </a>
-                    <div>
-                        <a href="perfil-beto.html" class="post-author">Alessandra Gonzalez</a>
-                        <span class="post-accion">actualizó su foto de perfil</span>
-                        <span class="post-time">hace 15 minutos</span>
+                    <img src="assets/ale.jpg" alt="Avatar de Alessandra" class="avatar">
+                    <div class="post-author-info">
+                        <a href="perfilAlessandra.html" class="post-author">Alessandra Gonzalez</a>
+                        <span class="post-meta">publicado en <a href="#">#GatosNaranjas</a> • hace 15 min</span>
                     </div>
                 </header>
-                <p class="post-content">Mandarina es una bola de pelos</p>
-                <img src="assets/gatos-naranjas.jpg" alt="Playa" class="post-image">
+                <h2 class="post-title">Mandarina es una bola de pelos</h2>
+                <img src="assets/gatos-naranjas.jpg" alt="Gato naranja" class="post-image">
                 <footer class="post-footer">
-                    <button class="action-btn"><i class="fas fa-thumbs-up"></i> Like 👍</button>
-                    <button class="action-btn"><i class="fas fa-comment"></i> Comment</button>
-                    <button class="action-btn"><i class="fas fa-share"></i> Share</button>
-                </footer>
-            </article>
-
-            <article class="card post">
-                <header class="post-header">
-                    <a href="perfil-carla.html">
-                        <img src="assets/arturo.jpg" alt="Avatar de Arturo" class="avatar">
-                    </a>
-                    <div>
-                        <a href="perfil-carla.html" class="post-author">Arturo Moran</a>
-                        <span class="post-time">hace 1 hora</span>
-                    </div>
-                </header>
-                <p class="post-content">Me aceptaron en el hackaton, ¡no puedo esperar para empezar!</p>
-                <div>
-                    <span class="post-hashtags">#DesarrolloWeb </span>
-                </div>
-                <footer class="post-footer">
-                    <button class="action-btn"><i class="fas fa-thumbs-up"></i> Me gusta</button>
-                    <button class="action-btn"><i class="fas fa-comment"></i> Comentar</button>
+                    <button class="action-btn"><i class="fas fa-arrow-up"></i> 12</button>
+                    <button class="action-btn"><i class="fas fa-arrow-down"></i></button>
+                    <button class="action-btn"><i class="fas fa-comment"></i> 3 Comentarios</button>
                     <button class="action-btn"><i class="fas fa-share"></i> Compartir</button>
                 </footer>
             </article>
 
             <article class="card post">
                 <header class="post-header">
-                    <a href="perfil-beto.html">
-                        <img src="assets/beto.jpg" alt="Avatar de Beto" class="avatar">
-                    </a>
-                    <div>
-                        <a href="perfil-beto.html" class="post-author">Beto Ramirez</a>
-                        <span class="post-time">hace 2 horas</span>
+                    <img src="assets/arturo.jpg" alt="Avatar de Arturo" class="avatar">
+                    <div class="post-author-info">
+                        <a href="perfilArturo.html" class="post-author">Arturo Moran</a>
+                        <span class="post-meta">publicado en <a href="#">#CodingLife</a> • hace 1 hora</span>
                     </div>
                 </header>
-                <p class="post-content">¡Increíble partido anoche! Nuestro equipo lo dio todo en la cancha.</p>
-                <img src="assets/futbol.jpg" alt="Partido de fútbol" class="post-image">
+                <h2 class="post-title">Me aceptaron en el hackaton papus</h2>
+                <p class="post-content">No puedo esperar para empezar a codificar y conocer a otros desarrolladores.</p>
                 <footer class="post-footer">
-                    <button class="action-btn"><i class="fas fa-thumbs-up"></i> Me gusta</button>
-                    <button class="action-btn"><i class="fas fa-comment"></i> Comentar</button>
+                    <button class="action-btn"><i class="fas fa-arrow-up"></i> 8</button>
+                    <button class="action-btn"><i class="fas fa-arrow-down"></i></button>
+                    <button class="action-btn"><i class="fas fa-comment"></i> 3 Comentarios</button>
                     <button class="action-btn"><i class="fas fa-share"></i> Compartir</button>
                 </footer>
             </article>
@@ -102,39 +104,62 @@
 
         <aside class="sidebar-right">
             <div class="card">
-                <h3>Sugerencias</h3>
-                <p>Personas que quizás conozcas.</p>
-                <a href="perfil-kerin.html" class="profile-link">
-                    <img src="assets/kerin.jpg" alt="Avatar de Alessandra" class="avatar-small">
-                    <span class="nombre">Gonzalez Kerin</span>
-                </a>
-                <button class="btn-agregar">Agregar</button>
-                <a href="perfil-kerin.html" class="profile-link">
-                    <img src="assets/kerin.jpg" alt="Avatar de Alessandra" class="avatar-small">
-                    <span class="nombre">Gonzalez Kerin</span>
-                </a>
-                <button class="btn-agregar">Agregar</button>
-                <a href="perfil-kerin.html" class="profile-link">
-                    <img src="assets/kerin.jpg" alt="Avatar de Alessandra" class="avatar-small">
-                    <span class="nombre">Gonzalez Kerin</span>
-                </a>
-                <button class="btn-agregar">Agregar</button>
-                <a href="perfil-kerin.html" class="profile-link">
-                    <img src="assets/kerin.jpg" alt="Avatar de Alessandra" class="avatar-small">
-                    <span class="nombre">Gonzalez Kerin</span>
-                </a>
-                <button class="btn-agregar">Agregar</button>
-                <a href="perfil-kerin.html" class="profile-link">
-                    <img src="assets/kerin.jpg" alt="Avatar de Alessandra" class="avatar-small">
-                    <span class="nombre">Gonzalez Kerin</span>
-                </a>
-                <button class="btn-agregar">Agregar</button>
-
+                <div class="card-header">
+                    <h4>Publicaciones Recientes</h4>
+                </div>
+                <ul class="recent-posts-list">
+                    <li class="recent-post-item">
+                        <img src="assets/kerin.jpg" class="avatar-small">
+                        <div>
+                            <p>Venta de drogas</p>
+                            <span>2 comentario</span>
+                        </div>
+                    </li>
+                    <li class="recent-post-item">
+                        <img src="assets/ale.jpg" class="avatar-small">
+                        <div>
+                            <p>Mandarina es una bola de pelos</p>
+                            <span>3 comentarios</span>
+                        </div>
+                    </li>
+                    <li class="recent-post-item">
+                        <img src="assets/arturo.jpg" class="avatar-small">
+                        <div>
+                            <p>¿programar una red social?</p>
+                            <span>13 comentarios</span>
+                        </div>
+                    </li>
+                </ul>
             </div>
 
+            <div class="card">
+                <div class="card-header">
+                    <h4>Amigos conectados</h4>
+                </div>
+                <ul class="popular-communities-list">
+                    <a href="perfilKerin.html" class="avatar-link">
+                        <img src="assets/kerin.jpg" alt="Avatar de Kerin" class="avatar-small">
+                        <span>Kerin Gonzalez</span>
+                        <button class="action-btn"><i class="fas fa-comment"></i></button>
+                    </a>
+                    <a href="perfilAlessandra.html" class="avatar-link">
+                        <img src="assets/ale.jpg" alt="Avatar de Alessandra" class="avatar-small">
+                        <span>Alessandra Gonzalez</span>
+                        <button class="action-btn"><i class="fas fa-comment"></i></button>
+                    </a>
+                    <a href="perfilArturo.html" class="avatar-link">
+                        <img src="assets/arturo.jpg" alt="Avatar de Arturo" class="avatar-small">
+                        <span>Arturo Moran</span>
+                        <button class="action-btn"><i class="fas fa-comment"></i></button>
+                    </a>
+                </ul>
+            </div>
         </aside>
-
     </main>
+
+    <label for="chat-toggle" class="chat-bubble">
+        <i class="fas fa-comment"></i>
+    </label>
 
 </body>
 
