@@ -32,7 +32,8 @@ El objetivo del proyecto es recrear la experiencia de una red social tipo foro/c
 2. Abre el archivo index.html en tu navegador favorito.
 3. (Opcional) Usa una extensión como Live Server en VS Code para mejor experiencia.
 
-🛠️ Tecnologías
+
+## 🛠️ Tecnologías
 
 HTML5
 CSS3 (Grid, Flexbox, Media Queries)
@@ -41,7 +42,8 @@ Font Awesome (iconos)
 
 Google Fonts (Inter)
 
-📱 Responsividad
+
+## 📱 Responsividad
 Desktop (≥ 1024px) → Layout con sidebar izquierda, feed central y sidebar derecha.
 
 Tablet (768px – 1023px) → Se oculta la sidebar derecha.
@@ -49,7 +51,7 @@ Tablet (768px – 1023px) → Se oculta la sidebar derecha.
 Móvil (< 768px) → Solo se muestra el feed, con navegación simplificada.
 
 
-🔮 Próximos pasos
+## 🔮 Próximos pasos
  Mejorar el sistema de publicaciones (likes, comentarios dinámicos).
 
  Implementar sistema real de chat (HTML + JS o backend).
@@ -60,7 +62,7 @@ Móvil (< 768px) → Solo se muestra el feed, con navegación simplificada.
 
  Mejorar responsividad
 
-👨‍💻 Autor
+## 👨‍💻 Autor
 Proyecto creado por Arturo Morán como práctica de diseño web y desarrollo frontend.
 
 Si quieres colaborar, ¡eres bienvenido! 🙌
