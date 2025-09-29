@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KortexHTML</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="theme-container">
+        <nav class="navbar">
+            <div class="container navbar-content">
+                <div class="navbar-left">
+                    <a href="index.html">
+                        <img src="assets/kortex cheat sheet.png" alt="Logo de KortexHTML" class="navbar-logo">
+                    </a>
+                </div>
+
+                <div class="navbar-center">
+                    <h1 class="navbar-title">GLOSARIO DE ELEMENTOS HTML</h1>
+                </div>
+
+                <div class="navbar-right">
+                    <a href="https://devkortex.vercel.app/" class="nav-link" title="Ir a la red social Kortex">
+                        <img src="assets/kortex.png" alt="Icono de Red Social" class="navbar-icon">
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+        <main class="container page-content feed-layout">
+            <aside class="sidebar-left">
+                <h3>Categorías</h3>
+                <ul class="table-of-contents">
+                    <li><a href="#estructura" class="sidebar-link">Estructura</a></li>
+                    <li><a href="#semantica" class="sidebar-link">Semántica</a></li>
+                    <li><a href="#texto" class="sidebar-link">Texto</a></li>
+                    <li><a href="#listas" class="sidebar-link">Listas</a></li>
+                    <li><a href="#tablas" class="sidebar-link">Tablas</a></li>
+                    <li><a href="#multimedia" class="sidebar-link">Multimedia</a></li>
+                    <li><a href="#formularios" class="sidebar-link">Formularios</a></li>
+                </ul>
+            </aside>
+
+            <section class="feed">
+                <div class="card">
+                    <p>Una guía de referencia rápida con las etiquetas más importantes</p>
+                </div>
+
+                <div id="estructura" class="glossary-section">
+                    <h2>Estructura del Documento</h2>
+                    <article class="card">
+                        <h3><code>&lt;!DOCTYPE html&gt;</code>, <code>&lt;html&gt;</code>, <code>&lt;head&gt;</code>,
+                            <code>&lt;body&gt;</code></h3>
+                        <p>Definen la estructura fundamental de una página. <strong>&lt;head&gt;</strong> contiene
+                            metadatos y <strong>&lt;body&gt;</strong> el contenido visible.</p>
+                    </article>
+                </div>
+
+                <div id="semantica" class="glossary-section">
+                    <h2>Secciones Semánticas</h2>
+                    <article class="card">
+                        <h3><code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>,
+                            <code>&lt;aside&gt;</code>, <code>&lt;footer&gt;</code></h3>
+                        <p>Organizan el contenido de la página de forma lógica, mejorando la accesibilidad y el SEO.</p>
+                    </article>
+                </div>
+
+                <div id="texto" class="glossary-section">
+                    <h2>Texto y Contenedores</h2>
+                    <article class="card">
+                        <h3><code>&lt;h1&gt;</code> - <code>&lt;h6&gt;</code>, <code>&lt;p&gt;</code>,
+                            <code>&lt;span&gt;</code>, <code>&lt;div&gt;</code></h3>
+                        <p>Elementos para títulos, párrafos y contenedores genéricos de bloque (div) o en línea (span).
+                        </p>
+                    </article>
+                    <article class="card">
+                        <h3><code>&lt;a&gt;</code></h3>
+                        <p>Crea un hipervínculo (link). El atributo <strong>href</strong> especifica el destino.</p>
+                        <div class="code-example">
+                            <pre><code>&lt;a href="https://google.com"&gt;Ir a Google&lt;/a&gt;</code></pre>
+                        </div>
+                    </article>
+                </div>
+
+                <div id="listas" class="glossary-section">
+                    <h2>Listas</h2>
+                    <article class="card">
+                        <h3><code>&lt;ul&gt;</code>, <code>&lt;ol&gt;</code>, <code>&lt;li&gt;</code>,
+                            <code>&lt;dl&gt;</code>, <code>&lt;dt&gt;</code>, <code>&lt;dd&gt;</code></h3>
+                        <p>Para crear listas no ordenadas (ul), ordenadas (ol) y de descripción (dl).</p>
+                    </article>
+                </div>
+
+            </section>
+
+            <aside class="sidebar-right">
+                <div class="card">
+                    <h3>Consejo Rápido</h3>
+                    <p>Usa siempre etiquetas semánticas. Ayuda a los lectores de pantalla y a los motores de búsqueda a
+                        entender mejor tu contenido.</p>
+                </div>
+                <div class="card">
+                    <h3>Recursos</h3>
+                    <ul class="table-of-contents">
+                        <li><a href="https://www.w3schools.com/html/" target="_blank" class="sidebar-link">W3Schools</a>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+        </main>
+    </div>
+</body>
+
+</html>
