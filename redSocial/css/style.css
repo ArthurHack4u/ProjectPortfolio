@@ -339,7 +339,7 @@ a {
     color: var(--text-secondary-color);
 }
 
-/* --- Media Queries para Responsividad (Simplificado) --- */
+/* --- Media Queries para Responsividad --- */
 @media (max-width: 1024px) {
     .page-content {
         grid-template-columns: 240px 1fr;
@@ -365,7 +365,6 @@ a {
 }
 
 /* --- Estilos para la Página de Perfil --- */
-
 .nav-actions .avatar-small.active-profile {
     border: 2px solid var(--primary-color);
     padding: 2px;
@@ -573,7 +572,6 @@ a {
         padding: 0 1rem;
     }
 
-    /* Ordenamos los elementos para una mejor jerarquía móvil */
     .profile-avatar-wrapper {
         order: 1;
     }
@@ -598,18 +596,11 @@ a {
 
     .profile-nav {
         margin-top: -20px;
-        /* Reducimos el espacio negativo para acercar las pestañas */
         padding: 10px 1rem 0;
         overflow-x: auto;
-        /* ¡La magia! Permite el scroll horizontal */
-        white-space: nowrap;
-        /* Evita que los links se partan en varias líneas */
         justify-content: flex-start;
-        /* Alinea las pestañas al inicio */
         -ms-overflow-style: none;
-        /* Oculta la barra de scroll en IE y Edge */
         scrollbar-width: none;
-        /* Oculta la barra de scroll en Firefox */
     }
 
     .profile-nav::-webkit-scrollbar {
