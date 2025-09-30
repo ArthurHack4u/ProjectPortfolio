@@ -27,7 +27,7 @@ El objetivo del proyecto es recrear la experiencia de una red social tipo foro/c
 
 1. Clona este repositorio:
    ```bash
-   git clone https://github.com/tuusuario/kortex.git
+   git clone https://github.com/ArthurHack4u/ProjectPortfolio.git
 
 2. Abre el archivo index.html en tu navegador favorito.
 3. (Opcional) Usa una extensión como Live Server en VS Code para mejor experiencia.
