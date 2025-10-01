@@ -28,7 +28,12 @@ a {
     color: var(--primary-color);
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     color: var(--text-color);
     margin: 0.5rem 0;
 }
@@ -39,7 +44,6 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0 auto;
 }
 
-/* --- Barra de Navegación --- */
 .navbar {
     background-color: var(--card-background);
     padding: 0.5rem 0;
@@ -57,7 +61,8 @@ h1, h2, h3, h4, h5, h6 {
     height: 100%;
 }
 
-.navbar-left, .navbar-right {
+.navbar-left,
+.navbar-right {
     flex: 1;
     display: flex;
     align-items: center;
@@ -77,11 +82,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar-title {
-    font-size: 2rem;
-    font-weight: 600;
-    color: var(--text-color);
+
+    font-size: 1.8rem;
+    font-weight: 700;
     margin: 0;
     white-space: nowrap;
+    background: linear-gradient(to right, var(--primary-color), #D97D54);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
 }
 
 .navbar-logo {
@@ -96,7 +105,6 @@ h1, h2, h3, h4, h5, h6 {
     display: block;
 }
 
-/* --- Estructura de la Página --- */
 .page-content {
     padding-top: 1.5rem;
 }
@@ -106,7 +114,6 @@ h1, h2, h3, h4, h5, h6 {
     display: none;
 }
 
-/* --- Tarjetas (Componente base) --- */
 .card {
     background-color: var(--card-background);
     border-radius: 8px;
@@ -116,19 +123,21 @@ h1, h2, h3, h4, h5, h6 {
     border: 1px solid var(--border-color);
 }
 
-/* --- COMPONENTES DEL GLOSARIO --- */
 .glossary-section {
     margin-bottom: 2rem;
 }
+
 .glossary-section h2 {
     border-bottom: 2px solid var(--border-color);
     padding-bottom: 0.5rem;
     margin-bottom: 1.5rem;
 }
+
 .glossary-section .card h3 {
     margin-top: 0;
     font-size: 1.2rem;
 }
+
 .glossary-section code {
     background-color: var(--code-background);
     color: var(--code-text-color);
@@ -136,9 +145,11 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 4px;
     font-family: 'Courier New', Courier, monospace;
 }
+
 .code-example {
     margin-top: 1rem;
 }
+
 .code-example pre {
     background-color: var(--code-background);
     border: 1px solid var(--border-color);
@@ -149,11 +160,13 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 0.9rem;
     color: var(--text-color);
 }
+
 .code-example code {
     background-color: transparent;
     padding: 0;
     color: inherit;
 }
+
 .table-of-contents {
     list-style-type: none;
     padding: 0;
@@ -173,18 +186,31 @@ h1, h2, h3, h4, h5, h6 {
         grid-template-columns: minmax(200px, 280px) 1fr;
         gap: 1.5rem;
     }
+
     .sidebar-left {
         display: block;
+        position: sticky;
+        top: 80px;
+        align-self: start;
     }
 }
 
 @media (min-width: 1024px) {
+    .navbar-title {
+        font-size: 1.4rem;
+    }
+
     .page-content.feed-layout {
         grid-template-columns: minmax(250px, 300px) 1fr minmax(250px, 300px);
     }
+
     .sidebar-right {
         display: block;
+        position: sticky;
+        top: 80px;
+        align-self: start;
     }
+
     .sidebar-left .profile-link,
     .sidebar-link {
         display: block;
@@ -194,12 +220,12 @@ h1, h2, h3, h4, h5, h6 {
         color: var(--primary-color);
         transition: background-color 0.2s;
     }
+
     .sidebar-left a:hover {
         background-color: var(--hover-background);
     }
 }
 
-/* --- MODO OSCURO AUTOMÁTICO --- */
 @media (prefers-color-scheme: dark) {
     :root {
         --background-color: #121212;
