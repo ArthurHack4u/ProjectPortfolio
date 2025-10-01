@@ -23,6 +23,16 @@
     }
 }
 
+.sidebar-left,
+.sidebar-right {
+    position: sticky; 
+    top: calc(60px + 1.5rem); 
+    align-self: start; 
+    height: calc(100vh - (60px + 1.5rem));
+    overflow-y: auto; 
+}
+
+
 body {
     font-family: var(--font-family);
     margin: 0;
@@ -129,12 +139,11 @@ a {
     color: var(--text-secondary-color);
 }
 
-/* --- Estructura de la Página --- */
 .page-content {
     display: grid;
     grid-template-columns: 240px 1fr 300px;
     gap: 1.5rem;
-    padding-top: 1.5rem;
+    padding-top: 0.5rem
 }
 
 .avatar,
@@ -154,8 +163,6 @@ a {
     padding-right:1rem;
 }
 
-
-/* --- Barra Lateral Izquierda --- */
 .sidebar-left .nav-group {
     margin-bottom: 1.5rem;
 }
@@ -197,7 +204,6 @@ a {
     color: var(--primary-color);
 }
 
-/* --- Feed Central --- */
 .card {
     background-color: var(--card-background);
     border: 1px solid var(--border-color);
@@ -290,7 +296,6 @@ a {
     background-color: var(--hover-background);
 }
 
-/* --- Barra Lateral Derecha --- */
 .sidebar-right .card {
     padding: 1rem;
 }
@@ -339,7 +344,6 @@ a {
     color: var(--text-secondary-color);
 }
 
-/* --- Media Queries para Responsividad --- */
 @media (max-width: 1024px) {
     .page-content {
         grid-template-columns: 240px 1fr;
@@ -364,7 +368,6 @@ a {
     }
 }
 
-/* --- Estilos para la Página de Perfil --- */
 .nav-actions .avatar-small.active-profile {
     border: 2px solid var(--primary-color);
     padding: 2px;
@@ -470,8 +473,6 @@ a {
     color: var(--text-color);
 }
 
-
-/* Navegación del Perfil (Pestañas) */
 .profile-nav {
     display: flex;
     gap: 1rem;
