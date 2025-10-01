@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KortexHTML</title>
+    <title>KortexHTML - Glosario</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,11 +20,9 @@
                         <img src="assets/kortex cheat sheet.png" alt="Logo de KortexHTML" class="navbar-logo">
                     </a>
                 </div>
-
                 <div class="navbar-center">
                     <h1 class="navbar-title">GLOSARIO DE ELEMENTOS HTML</h1>
                 </div>
-
                 <div class="navbar-right">
                     <a href="https://devkortex.vercel.app/" class="nav-link" title="Ir a la red social Kortex">
                         <img src="assets/kortex.png" alt="Icono de Red Social" class="navbar-icon">
@@ -39,7 +37,7 @@
                 <ul class="table-of-contents">
                     <li><a href="#estructura" class="sidebar-link">Estructura</a></li>
                     <li><a href="#semantica" class="sidebar-link">Semántica</a></li>
-                    <li><a href="#texto" class="sidebar-link">Texto</a></li>
+                    <li><a href="#texto" class="sidebar-link">Texto y Contenedores</a></li>
                     <li><a href="#listas" class="sidebar-link">Listas</a></li>
                     <li><a href="#tablas" class="sidebar-link">Tablas</a></li>
                     <li><a href="#multimedia" class="sidebar-link">Multimedia</a></li>
@@ -49,54 +47,155 @@
 
             <section class="feed">
                 <div class="card">
-                    <p>Una guía de referencia rápida con las etiquetas más importantes</p>
+                    <p>Una guía de referencia rápida con las etiquetas HTML más importantes, explicadas una por una.</p>
                 </div>
 
                 <div id="estructura" class="glossary-section">
                     <h2>Estructura del Documento</h2>
                     <article class="card">
-                        <h3><code>&lt;!DOCTYPE html&gt;</code>, <code>&lt;html&gt;</code>, <code>&lt;head&gt;</code>,
-                            <code>&lt;body&gt;</code></h3>
-                        <p>Definen la estructura fundamental de una página. <strong>&lt;head&gt;</strong> contiene
-                            metadatos y <strong>&lt;body&gt;</strong> el contenido visible.</p>
+                        <h3><code>&lt;!DOCTYPE html&gt;</code></h3>
+                        <p>No es una etiqueta, sino una declaración. Le dice al navegador que el documento es de tipo HTML5. Es la primera línea obligatoria en cualquier archivo HTML.</p>
+                    </article>
+                    <article class="card">
+                        <h3><code>&lt;html&gt;</code></h3>
+                        <p>Es el elemento raíz de la página. Todas las demás etiquetas deben estar contenidas dentro de esta.</p>
+                    </article>
+                    <article class="card">
+                        <h3><code>&lt;head&gt;</code></h3>
+                        <p>Contiene "metadatos" sobre la página, como el título, enlaces a hojas de estilo (CSS), scripts y el set de caracteres. Su contenido no es visible en la página.</p>
+                    </article>
+                     <article class="card">
+                        <h3><code>&lt;title&gt;</code></h3>
+                        <p>Define el título del documento, que se muestra en la pestaña o en la barra de título del navegador. Se coloca dentro de <code>&lt;head&gt;</code>.</p>
+                    </article>
+                    <article class="card">
+                        <h3><code>&lt;body&gt;</code></h3>
+                        <p>Contiene todo el contenido visible de la página web: textos, imágenes, videos, formularios, etc.</p>
                     </article>
                 </div>
 
                 <div id="semantica" class="glossary-section">
                     <h2>Secciones Semánticas</h2>
                     <article class="card">
-                        <h3><code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>,
-                            <code>&lt;aside&gt;</code>, <code>&lt;footer&gt;</code></h3>
-                        <p>Organizan el contenido de la página de forma lógica, mejorando la accesibilidad y el SEO.</p>
+                        <h3><code>&lt;header&gt;</code></h3>
+                        <p>Representa un grupo de contenido introductorio o de navegación. Puede contener encabezados, logos, formularios de búsqueda, etc.</p>
+                    </article>
+                    <article class="card">
+                        <h3><code>&lt;nav&gt;</code></h3>
+                        <p>Define una sección con los enlaces de navegación principales de la página (menú).</p>
+                    </article>
+                    <article class="card">
+                        <h3><code>&lt;main&gt;</code></h3>
+                        <p>Especifica el contenido principal y único del documento. Solo debe haber un <code>&lt;main&gt;</code> por página.</p>
+                    </article>
+                    <article class="card">
+                        <h3><code>&lt;aside&gt;</code></h3>
+                        <p>Define contenido que está indirectamente relacionado con el contenido principal, como una barra lateral (sidebar).</p>
+                    </article>
+                    <article class="card">
+                        <h3><code>&lt;footer&gt;</code></h3>
+                        <p>Define el pie de página de un documento o sección. Usualmente contiene información del autor, copyright y enlaces de contacto.</p>
                     </article>
                 </div>
 
                 <div id="texto" class="glossary-section">
                     <h2>Texto y Contenedores</h2>
                     <article class="card">
-                        <h3><code>&lt;h1&gt;</code> - <code>&lt;h6&gt;</code>, <code>&lt;p&gt;</code>,
-                            <code>&lt;span&gt;</code>, <code>&lt;div&gt;</code></h3>
-                        <p>Elementos para títulos, párrafos y contenedores genéricos de bloque (div) o en línea (span).
-                        </p>
+                        <h3><code>&lt;h1&gt;</code> a <code>&lt;h6&gt;</code></h3>
+                        <p>Definen los encabezados o títulos. <code>&lt;h1&gt;</code> es el de mayor importancia y <code>&lt;h6&gt;</code> el de menor.</p>
+                    </article>
+                    <article class="card">
+                        <h3><code>&lt;p&gt;</code></h3>
+                        <p>Define un párrafo de texto.</p>
                     </article>
                     <article class="card">
                         <h3><code>&lt;a&gt;</code></h3>
-                        <p>Crea un hipervínculo (link). El atributo <strong>href</strong> especifica el destino.</p>
-                        <div class="code-example">
-                            <pre><code>&lt;a href="https://google.com"&gt;Ir a Google&lt;/a&gt;</code></pre>
+                        <p>Define un hipervínculo (ancla o link). Su atributo principal es <strong>href</strong>, que especifica la URL de destino.</p>
+                         <div class="code-example">
+                            <pre><code>&lt;a href="https://kortex.com"&gt;Visita Kortex&lt;/a&gt;</code></pre>
                         </div>
+                    </article>
+                     <article class="card">
+                        <h3><code>&lt;div&gt;</code></h3>
+                        <p>Es un contenedor genérico de bloque. Se usa para agrupar otros elementos y aplicarles estilos con CSS o manipularlos con JavaScript.</p>
+                    </article>
+                    <article class="card">
+                        <h3><code>&lt;span&gt;</code></h3>
+                        <p>Es un contenedor genérico en línea. Se usa para aplicar estilos a una pequeña parte de un texto dentro de otro elemento, como un párrafo.</p>
                     </article>
                 </div>
 
                 <div id="listas" class="glossary-section">
                     <h2>Listas</h2>
                     <article class="card">
-                        <h3><code>&lt;ul&gt;</code>, <code>&lt;ol&gt;</code>, <code>&lt;li&gt;</code>,
-                            <code>&lt;dl&gt;</code>, <code>&lt;dt&gt;</code>, <code>&lt;dd&gt;</code></h3>
-                        <p>Para crear listas no ordenadas (ul), ordenadas (ol) y de descripción (dl).</p>
+                        <h3><code>&lt;ul&gt;</code> y <code>&lt;ol&gt;</code></h3>
+                        <p><code>&lt;ul&gt;</code> (Unordered List) crea una lista con viñetas. <code>&lt;ol&gt;</code> (Ordered List) crea una lista numerada.</p>
+                    </article>
+                    <article class="card">
+                        <h3><code>&lt;li&gt;</code></h3>
+                        <p>Define un elemento de lista (List Item). Se usa dentro de <code>&lt;ul&gt;</code> y <code>&lt;ol&gt;</code>.</p>
+                    </article>
+                    <article class="card">
+                        <h3><code>&lt;dl&gt;</code>, <code>&lt;dt&gt;</code> y <code>&lt;dd&gt;</code></h3>
+                        <p>Crean una lista de descripción. <code>&lt;dl&gt;</code> es el contenedor, <code>&lt;dt&gt;</code> es el término a definir y <code>&lt;dd&gt;</code> es la descripción de ese término.</p>
                     </article>
                 </div>
 
+                <div id="tablas" class="glossary-section">
+                    <h2>Tablas</h2>
+                     <article class="card">
+                        <h3><code>&lt;table&gt;</code></h3>
+                        <p>Define el contenedor principal para crear una tabla de datos.</p>
+                    </article>
+                    <article class="card">
+                        <h3><code>&lt;tr&gt;</code>, <code>&lt;th&gt;</code> y <code>&lt;td&gt;</code></h3>
+                        <p><code>&lt;tr&gt;</code> (Table Row) define una fila. <code>&lt;th&gt;</code> (Table Header) define una celda de encabezado. <code>&lt;td&gt;</code> (Table Data) define una celda de datos normal.</p>
+                    </article>
+                    <article class="card">
+                        <h3><code>&lt;thead&gt;</code>, <code>&lt;tbody&gt;</code> y <code>&lt;tfoot&gt;</code></h3>
+                        <p>Agrupan semánticamente las filas de la cabecera, el cuerpo y el pie de la tabla, respectivamente.</p>
+                    </article>
+                </div>
+
+                <div id="multimedia" class="glossary-section">
+                    <h2>Multimedia</h2>
+                    <article class="card">
+                        <h3><code>&lt;img&gt;</code></h3>
+                        <p>Inserta una imagen. Es una etiqueta auto-cerrada y requiere los atributos <strong>src</strong> (la ruta de la imagen) y <strong>alt</strong> (texto alternativo).</p>
+                    </article>
+                    <article class="card">
+                        <h3><code>&lt;video&gt;</code> y <code>&lt;audio&gt;</code></h3>
+                        <p>Incrustan contenido de video y audio, respectivamente. Usualmente se usa el atributo <strong>controls</strong> para mostrar los controles de reproducción.</p>
+                    </article>
+                    <article class="card">
+                        <h3><code>&lt;source&gt;</code></h3>
+                        <p>Permite especificar múltiples formatos de un archivo multimedia (video/audio) para que el navegador elija el más compatible. Se usa dentro de <code>&lt;video&gt;</code> o <code>&lt;audio&gt;</code>.</p>
+                    </article>
+                </div>
+
+                <div id="formularios" class="glossary-section">
+                    <h2>Formularios</h2>
+                    <article class="card">
+                        <h3><code>&lt;form&gt;</code></h3>
+                        <p>Es el contenedor para todos los controles de un formulario que enviará datos a un servidor.</p>
+                    </article>
+                    <article class="card">
+                        <h3><code>&lt;input&gt;</code></h3>
+                        <p>El elemento de formulario más versátil. Su comportamiento cambia drásticamente según su atributo <strong>type</strong> (ej: text, password, checkbox, radio, submit, etc.).</p>
+                    </article>
+                    <article class="card">
+                        <h3><code>&lt;label&gt;</code></h3>
+                        <p>Define una etiqueta de texto para un elemento <code>&lt;input&gt;</code>. Mejora la accesibilidad al asociarse con el control del formulario.</p>
+                    </article>
+                    <article class="card">
+                        <h3><code>&lt;select&gt;</code> y <code>&lt;option&gt;</code></h3>
+                        <p><code>&lt;select&gt;</code> crea un menú desplegable. Cada <code>&lt;option&gt;</code> dentro del select es una de las opciones disponibles en la lista.</p>
+                    </article>
+                     <article class="card">
+                        <h3><code>&lt;textarea&gt;</code></h3>
+                        <p>Define un campo de entrada de texto de múltiples líneas.</p>
+                    </article>
+                </div>
             </section>
 
             <aside class="sidebar-right">
@@ -108,13 +207,12 @@
                 <div class="card">
                     <h3>Recursos</h3>
                     <ul class="table-of-contents">
-                        <li><a href="https://www.w3schools.com/html/" target="_blank" class="sidebar-link">W3Schools</a>
-                        </li>
+                        <li><a href="https://www.w3schools.com/html/" target="_blank" class="sidebar-link">W3Schools</a></li>
+                        <li><a href="https://developer.mozilla.org/es/docs/Web/HTML" target="_blank" class="sidebar-link">MDN Web Docs</a></li>
                     </ul>
                 </div>
             </aside>
         </main>
     </div>
 </body>
-
 </html>
